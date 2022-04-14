@@ -21,8 +21,17 @@ export default class App extends Component {
     }
 
     //Create method DidMount inside it can print "App Component Did Mount" & print state value here...
-    
+    componentDidMount(){
+        console.log("App Component Didmount");
+        console.log(this.state);
+    }
+
     //Create method DidUpdate inside it can print "App Component Did Update" & print state value here...
+    componentDidUpdate(){
+        console.log("App Component Didupdate");
+        console.log(this.state);
+    }
+
 
     handleOnSubmit = (e) => {
         e.preventDefault()
