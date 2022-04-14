@@ -4,17 +4,37 @@ import {
         Row, Col, Form, 
         Button } from 'react-bootstrap'
 
+import {useState} from 'react'
+
 function ExampleForm() {
   //create state with attribute fullname, email & password here..
-
+  const [state, setState] = useState({
+    fullname: '',
+    email: '',
+    password: ''
+  })
+  
   const handleOnChange = (e) => {
     // setState here
+    setState({
+      ...state,
+      [e.target.name]: e.target.value
+    })
   }
 
   const handleOnSubmit = (e) => {
     e.preventDefault()
     //print state value with console.log here
+    console.log(state);
+
+    // const user = JSON.stringify(state)
+    // localStorage.setItem('user', user)
+    // const data = localStorage.getItem('user')
+    // const dataUser =  JSON.parse(data)
+    // console.log(dataUser);  
   }
+
+  console.log(data);
 
     return (
       <Container>
@@ -53,6 +73,9 @@ function ExampleForm() {
             <Button variant="primary" type="submit" size="sm">
               Submit
             </Button>
+            <h2>{data.fullname}</h2>
+            <p>{data.email}</p>
+            <p>{data.password}</p>
           </Form>
           </Col>
         </Row>
