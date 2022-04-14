@@ -33,8 +33,6 @@ function App() {
             console.log(state);
         }
     },[state])
-    
-
 
     const handleOnSubmit = (e) => {
         e.preventDefault()
