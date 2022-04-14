@@ -34,7 +34,7 @@ function ExampleForm() {
     // console.log(dataUser);  
   }
 
-  console.log(data);
+  // console.log(data);
 
     return (
       <Container>
@@ -73,9 +73,9 @@ function ExampleForm() {
             <Button variant="primary" type="submit" size="sm">
               Submit
             </Button>
-            <h2>{data.fullname}</h2>
+            {/* <h2>{data.fullname}</h2>
             <p>{data.email}</p>
-            <p>{data.password}</p>
+            <p>{data.password}</p> */}
           </Form>
           </Col>
         </Row>
