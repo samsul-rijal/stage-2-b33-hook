@@ -7,7 +7,13 @@ import {
 import Welcome from './Welcome'
 import GuestGreeting from './GuestGreeting'
 
+<<<<<<< Updated upstream
 export default class App extends Component {
+=======
+import { useEffect, useState } from 'react'
+
+function App() {
+>>>>>>> Stashed changes
 
     constructor(){
         super()
@@ -47,6 +53,7 @@ export default class App extends Component {
         console.log(this.state)
     }
 
+<<<<<<< Updated upstream
     render() {
         return (
             <>
@@ -59,6 +66,20 @@ export default class App extends Component {
                                 <Col md="4">
                                 <Form onSubmit={this.handleOnSubmit}>
                                     <div className="text-center h5">Login</div>
+=======
+
+    return (
+        <>
+            {state.isLogin ? <Welcome /> : 
+                (<>
+                    <GuestGreeting />
+                    <Container>
+                        <Row 
+                        className="d-flex justify-content-center mt-5">
+                            <Col md="4">
+                            <Form onSubmit={handleOnSubmit}>
+                                <div className="text-center h5">Login</div>
+>>>>>>> Stashed changes
 
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                     <Form.Label>Email address</Form.Label>
