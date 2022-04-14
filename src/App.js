@@ -18,7 +18,6 @@ function App() {
             password: ''
         }
     })
-
     
     // Create DidMount with useEffect inside it can print "App Component Did Mount" & state value here
     useEffect(() => {
